@@ -21,6 +21,8 @@ void *pop(Pilha *pilha){
         free(pilha);
         return temp;
     }
+    pilha->valor = 0;
+    pilha->prev = NULL;
     return pilha;
 }
 
